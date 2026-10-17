@@ -11,9 +11,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML and Header Tags</title>
+    <script>
+        function myFunction()
+        {
+            document.getElementById('welcome').innerHTML="Welcome to student portal";
+        }
+    </script>
 </head>
-<body>
+<body onload="myFunction()">
     <h2>Welcome</h2>
-    <p>Welcome to my website</p>
+    <p id="welcome">Welcome to my website</p>
 </body>
 </html>
