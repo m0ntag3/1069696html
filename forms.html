@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input[type=text],[type=radio],select, textarea, [type=password],[type=checkbox]
+        {
+            width: 100%;
+        }
+        input[type=submit],[type=reset]
+        {
+            width: 45%;
+            background-color: rgb(86, 38, 38);
+            color: aquamarine;
+            border-radius: 5px;
+            border: 5px thistle;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with forms in HTML</title>
+</head>
+<body>
+    <form>
+        <!-- Contains e contents -->
+        <fieldset>
+            <!-- Legend serves the function of e fieldset heading -->
+            <legend>Create Profile</legend>
+
+            <label>Surname</label>
+            <input type="text">
+
+            <label>Other Names</label>
+            <input type="text">
+
+            <fieldset>
+                <legend>Gender</legend>
+                <!-- input type radio without name attribute allows users to choose all choices offered -->
+                <input type="radio" name="rdoGender">Male 
+                <input type="radio" name="rdoGender">Female
+            </fieldset>
+            <br>
+
+            <label>Select your nationality</label>
+            <select>
+                <option>Select nationality</option>
+                <option>Kenya</option>
+                <option>British</option>
+                <option>Uganda</option>
+                <option>Tanzania</option>
+            </select>
+            <br><br>
+
+            <label>Select file to upload</label>
+            <br>
+            <input type="file">
+            <br>
+
+            <label>Brief information about yourself</label>
+            <textarea></textarea>
+
+            <label>Password</label>
+            <input type="password">
+            <label>Confirm password</label>
+            <input type="password">
+            <br>
+
+            <input type="checkbox">I accept the terms and conditions
+            <input type="checkbox">I am more than 18 years old
+            <br>
+
+            <input type="submit" value="Create account">
+            <input type="reset" value="Clear">
+            
+            <button onclick="alert('You clicked me')">Click me</button>
+        </fieldset>
+    </form>
+</body>
+</html>
