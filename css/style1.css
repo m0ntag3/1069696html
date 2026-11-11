@@ -1,0 +1,12 @@
+body
+{
+    background-color: lightgray;
+    color: black;
+}
+p
+{
+    background-color: black;
+    color: gold;
+    border-bottom:1px solid maroon;
+    border-radius: 5px;
+}
