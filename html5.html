@@ -6,19 +6,51 @@
     <title>Working with HTML 5</title>
 </head>
 <body>
-    <form>
+    <form autocomplete="on" novalidate>
     <label>Enter your email</label>
     <br>
-    <input type="email">
+    <input type="email" placeholder="Email Address..." required>
     <br>
+    <label>Enter date</label><br>
     <input type="date">
     <br>
-    <input type="datetime">
+    <label>Enter date and time of your location</label><br>
+    <input type="datetime-local" autofocus>
     <br>
+    <label>Choose a color from the colorpicker</label><br>
     <input type="color">
     <br>
-    <label>Enter your website URL</label>
-    <input type="url">
+    <label>Enter your website URL</label><br>
+    <input type="url" disabled>
+    <br>
+    <label>Select Time</label><br>
+    <input type="time">
+    <br>
+    <label>Select a number</label><br>
+    <input type="number" min="2" max="10" step="2">
+    <br>
+    <label>Slide to Right/Left</label><br>
+    <input type="range">
+    <br>
+    <label>Select the month</label><br>
+    <input type="month">
+    <br>
+    <label>Select the week</label><br>
+    <input type="week">
+    <br>
+    <label>Enter item to search for:</label><br>
+    <input type="search">
+    <br>
+    <label>Enter your mobile number</label><br>
+    <input type="tel" placeholder="xxx-xxx-xxx-xxx" pattern="\d{3}-\d{3}-\d{3}-\d{3}">
+    <br>
+    <label>Select one or more options</label>
+    <select style="width: 100%;" multiple>
+        <option>TV</option>
+        <option>Social Media</option>
+        <option>Twitter</option>
+        <option>Website</option>
+    </select>
     <br>
     <input type="submit" value="Save">
     </form>
