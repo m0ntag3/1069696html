@@ -10,3 +10,12 @@ p
     border-bottom:1px solid maroon;
     border-radius: 5px;
 }
+h2
+{
+    color: hotpink;
+}
+h3
+{
+    background-color: magenta;
+    color: black;
+}
