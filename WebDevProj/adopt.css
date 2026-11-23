@@ -1,0 +1,185 @@
+body
+{
+    background-color: rgb(237, 213, 187);
+}
+.stripe 
+{
+    height: 8px; 
+    background: brown;
+}
+.site
+{
+    background-color: rgb(237, 213, 187);
+    border-bottom: 3px solid gray;
+}
+.orgdes
+{
+    text-align: left;
+}
+.content
+{
+    text-decoration: none;
+    color: black; 
+    font-size: 25px;
+}
+.content strong 
+{ 
+    display: block; 
+    font-family:'Times New Roman', Times, serif; 
+    font-size: 30px; 
+    font-weight: bold; 
+}
+.pginfo
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(123, 119, 119);
+}
+nav 
+{
+    margin-top: 15px;
+    text-align: right; 
+}
+nav a 
+{
+    margin-bottom: 10px; 
+    display: inline-flex; 
+    align-items: center;
+    padding: 7px;
+    text-decoration: none; 
+    font-size: 19px; 
+    font-weight: bold; 
+    color: rgb(26, 25, 25);
+}
+nav a.on 
+{
+    text-underline-offset: 8px; 
+    text-decoration: underline 2px brown; 
+}
+nav a:hover
+{
+    background-color: brown;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.timeline
+{
+    text-transform: uppercase;
+    color: brown;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+.status
+{
+    color: rgb(74, 33, 33);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+main 
+{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.cards 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.card 
+{
+    background-color: rgb(214, 212, 247);
+    border: 1px solid rgba(165, 42, 42, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover 
+{
+    transform: translateY(-5px);
+    background-color: rgb(242, 240, 207);
+    box-shadow: 0 10px 20px rgba(74, 33, 33, 0.14);
+}
+
+.card img 
+{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+    border-bottom: 2px solid rgba(165, 42, 42, 0.15);
+}
+
+.cardlooks
+{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.line
+{
+    height: 2px; 
+    background: brown;
+}
+.anidata 
+{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: rgb(74, 33, 33);
+}
+
+.age 
+{
+    margin: 4px 0;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: rgb(45, 40, 40);
+}
+
+.gender 
+{
+    color: rgb(115, 95, 95);
+}
+
+.fee 
+{
+    border-radius: 5px;
+    background-color: rgb(62, 37, 53);
+    margin-top: 16px;
+    margin-left: 100px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width:fit-content;
+    border-top: 1px solid rgba(165, 42, 42, 0.15);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(231, 207, 207);
+}
+.fee:hover
+{
+    background-color: rgb(231, 207, 207);
+    color: rgb(62, 37, 53);
+}
+
+footer 
+{
+    max-width: 1100px;
+    margin: 40px auto 20px;
+    padding: 20px;
+    border-top: 1px solid rgba(165, 42, 42, 0.2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: rgb(115, 95, 95);
+}

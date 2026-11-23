@@ -1,3 +1,5 @@
+/* Border - Line */
+/*  Padding - Space btn content and border */
 header
 {
     background-color: maroon;
@@ -6,7 +8,7 @@ header
     width: 100%;
     
 }
-#container
+#wrapper
 {
     width: 80%;
     border-radius: 5px;
@@ -18,22 +20,24 @@ nav
 {
     background-color: lightpink;
     color: red;
-    height: 50px;
+    height: auto;
     width: 100%;
     border: 1px solid lightgray;
     border-radius: 5px;
+    /* To arrange the links horizontally */
+    display: flex; 
 }
 main
 {
-    width: 70%;
+    /* flex - Total space = 4 (Divide the 4 spaces appropriately amng the components) */
+    flex: 3;
     height: auto;
     border-radius: 5px;
     border: 1px solid lightgray;
-    float: left;
 }
 aside
 {
-    width: 25%;
+    flex: 1;
     height: auto;
     border-radius: 5px;
     border: 1px solid lightgray;
@@ -49,4 +53,92 @@ footer
     border-radius: 5px;
     border: 1px solid lightgray;
     clear: both; /* Clears floatig left*/
+}
+.container 
+/* For the section having main and aside */
+{
+    display: flex;
+    border: 1px solid lightgray;
+}
+.welcome
+{
+    background-color: black;
+    color: gold;
+    border-bottom: 5px solid maroon;
+    border-radius: 5px;
+    font-size: 20px;
+}
+header, nav, main, aside, footer
+{
+    margin: 10px;
+}
+nav a
+{
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    border-right: 2px solid black;
+}
+nav a:link  
+/* Unvisited link */
+{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+nav a:visited
+/* Visited link */
+{
+    background-color: gray;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover
+/* Mouse over link */
+{
+    background-color: maroon;
+    color: white;
+    text-decoration: underline;
+}
+nav a:active
+{
+    background-color: green;
+    color: red;
+    text-decoration: underline;
+}
+td, th
+{
+    padding: 20px;
+    border-bottom: 1px solid firebrick;
+}
+table
+{
+    /* To collapse the border */
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2px;
+}
+td
+{
+    text-align: center;
+}
+th
+{
+    vertical-align: bottom;
+    background-color: rgb(190, 244, 110);
+    color: purple;
+}
+tr:hover
+{
+    background-color: palevioletred;
+    color: white;
+    border-right: 10px solid gold;
+    border-left: 5px solid darkgreen;
+}
+tr:nth-child(odd)
+{
+    background-color: khaki;
+    color: darkorchid;
 }

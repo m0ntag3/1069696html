@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=V, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/WebDevProj/style.css">
+</head>
+<body>
+<div class="stripe"></div>
+  <header class="site">
+    <div class="wrap bar">
+      <a class="word" href="#top">
+        <strong>Hearth & Hound</strong>
+        <span>Rescue desk</span>
+      </a>
+      <nav aria-label="Primary">
+        <a class="on" href="#top">Home</a>
+        <a href="#waiting">Adopt</a>
+        <a href="#lost">Missing</a>
+        <a href="#desks">Centres</a>
+        <a href="#apply">Apply</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+    <section class="hero">
+      <div>
+        <p class="kicker">Four desks · one board</p>
+        <h1>Find them a home. Or help them find theirs.</h1>
+        <p class="lede">Dogs, cats and a rabbit in the care of local rescue desks. Report a missing animal, read who is waiting, and send a short adoption note.</p>
+        <div class="actions">
+          <a class="btn" href="#waiting">See who is waiting</a>
+          <a class="btn ghost" href="#lost">Report missing</a>
+        </div>
+        <dl class="stats">
+          <div><dt>In care</dt><dd>9</dd></div>
+          <div><dt>Desks</dt><dd>4</dd></div>
+          <div><dt>Open notices</dt><dd>2</dd></div>
+        </dl>
+      </div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&h=1200&q=75" alt="Maple, a young golden retriever, sitting with a tulip">
+        <figcaption>
+          <span><b>Maple</b> <span class="muted">· golden retriever, 8 months</span></span>
+          <a href="#waiting">Her listing</a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="block" id="waiting">
+      <div class="row">
+        <div>
+          <p class="kicker">This week</p>
+          <h2>Waiting now</h2>
+        </div>
+        <a class="link" href="#waiting">All 9</a>
+      </div>
+      <div class="cards">
+        <a class="card" href="#apply">
+          <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&h=1200&q=75" alt="Maple, a golden retriever">
+          <div>
+            <div class="meta"><h3>Maple</h3><span class="small muted">8 months</span></div>
+            <p class="small muted">Golden retriever · Female</p>
+            <p class="small">Willow Street Shelter</p>
+            <p class="fee">Care fee £160</p>
+          </div>
+        </a>
+        <a class="card" href="#apply">
+          <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&h=1200&q=75" alt="Juniper, a black and white cat">
+          <div>
+            <div class="meta"><h3>Juniper</h3><span class="small muted">3 years</span></div>
+            <p class="small muted">Domestic shorthair · Female</p>
+            <p class="small">Northridge Foster Collective</p>
+            <p class="fee">Care fee £90</p>
+          </div>
+        </a>
+        <a class="card" href="#apply">
+          <img src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?auto=format&fit=crop&w=900&h=1200&q=75" alt="Otis, a chow chow">
+          <div>
+            <div class="meta"><h3>Otis</h3><span class="small muted">5 years</span></div>
+            <p class="small muted">Chow chow · Male</p>
+            <p class="small">Harbour Senior Sanctuary</p>
+            <p class="fee">Care fee £90</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="block">
+      <p class="kicker">Plain steps</p>
+      <h2>How a match happens</h2>
+      <ol class="steps">
+        <li><p class="small muted">01</p><h3>Read a listing</h3><p class="muted">Age, temperament, the desk that has them, and what sort of house will actually work.</p></li>
+        <li><p class="small muted">02</p><h3>Send a note</h3><p class="muted">A short application: where you live, who else is there, and why this animal.</p></li>
+        <li><p class="small muted">03</p><h3>Meet at the desk</h3><p class="muted">The centre reads what you wrote and arranges a visit. The care fee is paid only if you both say yes.</p></li>
+      </ol>
+    </section>
+
+    <section class="block" id="lost">
+      <div class="row">
+        <div>
+          <p class="kicker">Board</p>
+          <h2>Lost and found</h2>
+        </div>
+        <a class="link" href="#lost">Post a notice</a>
+      </div>
+      <div class="notices">
+        <article class="notice">
+          <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=900&h=1200&q=75" alt="">
+          <div>
+            <p class="tag lost">Lost</p>
+            <h3>Miso</h3>
+            <p class="small muted">Cat · Brown tabby, white chest</p>
+            <p class="small">Oak Market, behind the bakery</p>
+          </div>
+        </article>
+        <article class="notice">
+          <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=900&h=1200&q=75" alt="">
+          <div>
+            <p class="tag found">Found</p>
+            <h3>No name on the tag</h3>
+            <p class="small muted">Dog · Cream curls, small blue tag</p>
+            <p class="small">Quay grass, south of the footbridge</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="desks">
+      <p class="kicker">Where they are</p>
+      <h2>The desks</h2>
+      <ul class="desks">
+        <li><h3>Willow Street Shelter</h3><p class="small muted">Dogs, and the occasional cat who will not leave the yard</p><p class="small">3 waiting</p><a class="small" href="#waiting">Visit</a></li>
+        <li><h3>Northridge Foster Collective</h3><p class="small muted">Home fosters — cats, puppies, anyone who does badly in a kennel</p><p class="small">3 waiting</p><a class="small" href="#waiting">Visit</a></li>
+        <li><h3>Riverside Small Pets</h3><p class="small muted">Rabbits and other small animals</p><p class="small">1 waiting</p><a class="small" href="#waiting">Visit</a></li>
+        <li><h3>Harbour Senior Sanctuary</h3><p class="small muted">Older dogs and cats who are finished with noise</p><p class="small">2 waiting</p><a class="small" href="#waiting">Visit</a></li>
+      </ul>
+    </section>
+
+    <section class="block" id="apply">
+      <p class="kicker">Adoption application</p>
+      <h2>Write to the desk</h2>
+      <p class="lede">A short note is enough to start. Nothing is paid until you have met the animal.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <p>Hearth & Hound connects four rescue desks with people who have room.<br>Notes you post stay in this browser.</p>
+      <p>Photographs via Unsplash.</p>
+    </div>
+  </footer>
+</body>
+</html>
